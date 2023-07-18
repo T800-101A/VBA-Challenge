@@ -69,12 +69,12 @@ ws.Cells(Count, 10).Value = ws.Cells(i, 6).Value - ws.Cells(x, 3).Value
 
     
     
-        If ws.Cells(Count, 10).Value < 0 Then
-        
-            ws.Cells(Count, 10).Interior.Color = RGB(255, 0, 0)
-        Else
-            ws.Cells(Count, 10).Interior.Color = RGB(0, 255, 0)
-        End If
+    If ws.Cells(Count, 10).Value < 0 Then
+      
+        ws.Cells(Count, 10).Interior.Color = RGB(255, 0, 0)
+    Else
+        ws.Cells(Count, 10).Interior.Color = RGB(0, 255, 0)
+    End If
 
     
 '--------------------------------------------------------------------------------------------------------
@@ -184,6 +184,7 @@ GV = ws.Cells(2, 12).Value
     Else
         GV = GV
     End If
+    
     
     
 ws.Cells(2, 17).Value = Format(GI, "Percent")
